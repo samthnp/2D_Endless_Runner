@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -12,11 +14,7 @@ public class Player : MonoBehaviour
     public float maxHeight;
     public float minHeight;
 
-    // Start is called before the first frame update
-    private void Start()
-    {
-        
-    }
+    public int playerHealth = 3;
 
     // Update is called once per frame
     private void Update()
@@ -34,7 +32,7 @@ public class Player : MonoBehaviour
             updatedPosition = new Vector2(transform.position.x, transform.position.y - valueOfMovement);
         }
     }
-
+    
     private void PlayerConstraint()
     {
         Vector2 constraintPosition = transform.position;
@@ -47,6 +45,23 @@ public class Player : MonoBehaviour
         else if (constraintPosition.y < -3)
         {
             constraintPosition.y = -3;
+        }
+    }
+    void CheckHealthStatus()
+    {
+        if (playerHealth <= 0)
+        {
+            Destroy(gameObject);
+
+            SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+        }
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            print("hit");
+            CheckHealthStatus(); 
         }
     }
 }
