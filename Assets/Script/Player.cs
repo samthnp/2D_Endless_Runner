@@ -13,67 +13,54 @@ public class Player : MonoBehaviour
     public float moveCooldown;
     public float moveCooldownReset;
 
-    public float maxHeight;
-    public float minHeight;
+    public float maxUp;
+    public float maxDown;
+    public float maxLeft;
+    public float maxRight;
 
     public int playerHealth = 3;
     public int damageReceived = 1;
 
+    public int test;
+
     // Update is called once per frame
     private void Update()
     {
-        PlayerConstraint();
+        
         moveCooldown = moveCooldown - Time.deltaTime;
         
         // move player
         transform.position = Vector2.MoveTowards(transform.position, updatedPosition, playerMoveSpeed * Time.deltaTime);
         PlayerMovementInput();
     }
-
     private void PlayerMovementInput()
     {
         if (moveCooldown <= 0)
         {
-            if (Input.GetKeyDown(KeyCode.W) && transform.position.y < maxHeight)
+            if (Input.GetKeyDown(KeyCode.W) && transform.position.y < maxUp)
             {
                 updatedPosition = new Vector2(transform.position.x, transform.position.y + moveDistance);
                 moveCooldown = moveCooldownReset;
             }
 
-            else if (Input.GetKeyDown(KeyCode.S) && transform.position.y > minHeight)
+            else if (Input.GetKeyDown(KeyCode.S) && transform.position.y > maxDown)
             {
                 updatedPosition = new Vector2(transform.position.x, transform.position.y - moveDistance);
                 moveCooldown = moveCooldownReset;
             }
 
-            else if (Input.GetKeyDown(KeyCode.A))
+            else if (Input.GetKeyDown(KeyCode.A) && transform.position.x > maxLeft)
             {
                 updatedPosition = new Vector2(transform.position.x - moveDistance, transform.position.y);
                 moveCooldown = moveCooldownReset;
             }
-            else if (Input.GetKeyDown(KeyCode.D))
+            else if (Input.GetKeyDown(KeyCode.D) && transform.position.x < maxRight)
             {
                 updatedPosition = new Vector2(transform.position.x + moveDistance, transform.position.y);
                 moveCooldown = moveCooldownReset;
             }
         }
     }
-    
-    private void PlayerConstraint()
-    {
-        Vector2 constraintPosition = transform.position;
-        
-        if (constraintPosition.y > 3)
-        {
-            constraintPosition.y = 3;
-        }
-        
-        else if (constraintPosition.y < -3)
-        {
-            constraintPosition.y = -3;
-        }
-    }
-
     private void CheckHealthStatus()
     {
         if (playerHealth <= 0)
@@ -91,7 +78,9 @@ public class Player : MonoBehaviour
             print("hit");
             playerHealth = playerHealth - damageReceived;
             print(playerHealth);
-            CheckHealthStatus(); 
+            CheckHealthStatus();
         }
     }
+    
+    
 }

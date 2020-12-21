@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -261,6 +261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1893360063567457719, guid: 1dd4adf91d1061f418e2ddf9ec38e7aa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dd4adf91d1061f418e2ddf9ec38e7aa, type: 3}
 --- !u!1001 &5696939933912310942
@@ -280,11 +284,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5696939935253781485, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 5696939935253781485, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5696939935253781485, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
       propertyPath: m_LocalPosition.z
@@ -323,6 +327,22 @@ PrefabInstance:
       value: PlayerCharacter
       objectReference: {fileID: 0}
     - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
+      propertyPath: maxUp
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
+      propertyPath: maxDown
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
+      propertyPath: maxLeft
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
+      propertyPath: maxRight
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
       propertyPath: moveCooldown
       value: 0.25
       objectReference: {fileID: 0}
@@ -331,12 +351,20 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
+      propertyPath: playerHealth
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
       propertyPath: playerMoveSpeed
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
       propertyPath: moveCooldownReset
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
+      propertyPath: updatedPosition.x
+      value: -15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}

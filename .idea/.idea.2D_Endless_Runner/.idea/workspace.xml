@@ -20,8 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="704fb202-b7de-4095-88ac-c0eedf030835" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Script/EnemyRight_to_Left.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/EnemyRight_to_Left.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2D_Endless_Runner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2D_Endless_Runner/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2D_Endless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2D_Endless_Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +47,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/EnemySpawnPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/EnemyRight_to_Left.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player.cs" />
       </list>
     </option>
@@ -91,7 +97,9 @@
       <updated>1608445859384</updated>
       <workItem from="1608445880063" duration="5596000" />
       <workItem from="1608452528990" duration="3002000" />
-      <workItem from="1608518611921" duration="2288000" />
+      <workItem from="1608518611921" duration="2816000" />
+      <workItem from="1608524986069" duration="1476000" />
+      <workItem from="1608528897118" duration="1147000" />
     </task>
     <servers />
   </component>

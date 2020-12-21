@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class EnemyRight_to_Left : MonoBehaviour
 {
     
     public float enemySpeed;
@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour
             */
             Destroy(gameObject);
         }
+
     }
     void EnemyLifeTime()
     {
