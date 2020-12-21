@@ -20,35 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="704fb202-b7de-4095-88ac-c0eedf030835" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.2D_Endless_Runner/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.2D_Endless_Runner/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.2D_Endless_Runner/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.2D_Endless_Runner/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.2D_Endless_Runner/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.2D_Endless_Runner/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPattern1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPattern1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPattern2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPattern2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPattern3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPattern3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPattern4.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPattern4.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPattern5.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPattern5.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPattern6.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPattern6.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemySpawner.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemySpawner.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerCharacter.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerCharacter.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/EnemySpawnPoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/EnemySpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2D_Endless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2D_Endless_Runner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +91,7 @@
       <updated>1608445859384</updated>
       <workItem from="1608445880063" duration="5596000" />
       <workItem from="1608452528990" duration="3002000" />
+      <workItem from="1608518611921" duration="2288000" />
     </task>
     <servers />
   </component>
@@ -143,10 +118,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="400" y="279" width="1257" height="615" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.71.1600.860@0.0.1920.1040" timestamp="1608446271248" />
-    <state x="1920" y="71" width="1413" height="866" key="dock-window-1" timestamp="1608450229746">
+    <state x="1976" y="83" width="1413" height="866" key="dock-window-1" timestamp="1608519962233">
       <screen x="1920" y="71" width="1600" height="860" />
     </state>
-    <state x="1920" y="71" width="1413" height="866" key="dock-window-1/0.0.1920.1040/1920.71.1600.860@0.0.1920.1040" timestamp="1608450229746" />
+    <state x="1976" y="83" width="1413" height="866" key="dock-window-1/0.0.1920.1040/1920.71.1600.860@0.0.1920.1040" timestamp="1608519962233" />
     <state x="1920" y="71" width="1413" height="866" key="dock-window-2" timestamp="1608450478856">
       <screen x="1920" y="71" width="1600" height="860" />
     </state>
@@ -155,5 +130,9 @@
       <screen x="1920" y="71" width="1600" height="860" />
     </state>
     <state x="1920" y="71" width="1413" height="866" maximized="true" key="dock-window-3/0.0.1920.1040/1920.71.1600.860@0.0.1920.1040" timestamp="1608452862519" />
+    <state x="668" y="267" key="search.everywhere.popup" timestamp="1608520228162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="267" key="search.everywhere.popup/0.0.1920.1040/1920.71.1600.860@0.0.1920.1040" timestamp="1608520228162" />
   </component>
 </project>

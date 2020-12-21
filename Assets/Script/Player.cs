@@ -6,30 +6,56 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-
     public Vector2 updatedPosition;
-    public float valueOfMovement;
+    public float moveDistance;
     public float playerMoveSpeed;
+    
+    public float moveCooldown;
+    public float moveCooldownReset;
 
     public float maxHeight;
     public float minHeight;
 
     public int playerHealth = 3;
+    public int damageReceived = 1;
 
     // Update is called once per frame
     private void Update()
     {
         PlayerConstraint();
-        transform.position = Vector2.MoveTowards(transform.position,updatedPosition,playerMoveSpeed * Time.deltaTime);
+        moveCooldown = moveCooldown - Time.deltaTime;
+        
+        // move player
+        transform.position = Vector2.MoveTowards(transform.position, updatedPosition, playerMoveSpeed * Time.deltaTime);
+        PlayerMovementInput();
+    }
 
-        if (Input.GetKeyDown(KeyCode.W) && transform.position.y < maxHeight)
+    private void PlayerMovementInput()
+    {
+        if (moveCooldown <= 0)
         {
-            updatedPosition = new Vector2(transform.position.x,transform.position.y + valueOfMovement);
-        }
+            if (Input.GetKeyDown(KeyCode.W) && transform.position.y < maxHeight)
+            {
+                updatedPosition = new Vector2(transform.position.x, transform.position.y + moveDistance);
+                moveCooldown = moveCooldownReset;
+            }
 
-        else if (Input.GetKeyDown(KeyCode.S) && transform.position.y > minHeight)
-        {
-            updatedPosition = new Vector2(transform.position.x, transform.position.y - valueOfMovement);
+            else if (Input.GetKeyDown(KeyCode.S) && transform.position.y > minHeight)
+            {
+                updatedPosition = new Vector2(transform.position.x, transform.position.y - moveDistance);
+                moveCooldown = moveCooldownReset;
+            }
+
+            else if (Input.GetKeyDown(KeyCode.A))
+            {
+                updatedPosition = new Vector2(transform.position.x - moveDistance, transform.position.y);
+                moveCooldown = moveCooldownReset;
+            }
+            else if (Input.GetKeyDown(KeyCode.D))
+            {
+                updatedPosition = new Vector2(transform.position.x + moveDistance, transform.position.y);
+                moveCooldown = moveCooldownReset;
+            }
         }
     }
     
@@ -47,7 +73,8 @@ public class Player : MonoBehaviour
             constraintPosition.y = -3;
         }
     }
-    void CheckHealthStatus()
+
+    private void CheckHealthStatus()
     {
         if (playerHealth <= 0)
         {
@@ -56,11 +83,14 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
         }
     }
-    void OnTriggerEnter2D(Collider2D other)
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy"))
         {
             print("hit");
+            playerHealth = playerHealth - damageReceived;
+            print(playerHealth);
             CheckHealthStatus(); 
         }
     }

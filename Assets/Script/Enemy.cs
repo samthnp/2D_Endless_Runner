@@ -6,7 +6,6 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     
-    public int damageValue = 1;
     public float enemySpeed;
 
     public float enemyLifeTimeValue;
@@ -21,8 +20,9 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            /*
             other.GetComponent<Player>().playerHealth = other.GetComponent<Player>().playerHealth - damageValue;
-            Debug.Log(other.GetComponent<Player>().playerHealth);
+            */
             Destroy(gameObject);
         }
     }

@@ -322,5 +322,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
+      propertyPath: moveCooldown
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
+      propertyPath: moveDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
+      propertyPath: playerMoveSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696939935253781487, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
+      propertyPath: moveCooldownReset
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df2ce63c312c6e148a69f0ec733ee743, type: 3}
